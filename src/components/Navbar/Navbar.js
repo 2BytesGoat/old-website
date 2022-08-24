@@ -24,9 +24,9 @@ const navbar = () => (
               </NavLink>
             </li>
             <li className="nav-item px-4">
-              <NavLink className="nav-link navbar-item" exact="true" to="/blog">
-                Blog
-              </NavLink>
+                <a className="nav-link navbar-item" target="_blank" href="https://2bytesgoat.blogspot.com/">
+                    Blog
+                </a>
             </li>
             <li className="nav-item px-4">
               <NavLink
