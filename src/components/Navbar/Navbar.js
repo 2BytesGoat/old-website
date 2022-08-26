@@ -1,63 +1,58 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import logo from "../../media/logo.png";
 import "./Navbar.css";
 
 const navbar = () => (
-  <div className="container py-3 mb-4" style={{ position: "absolute" }}>
-    <div className="row">
-      <div className="d-flex justify-content-start col-xs-6 col-sm-4">
-        <a className="link-dark" href="https://github.com/2BytesGoat">
-          <i aria-hidden="true" className="github big icon navbar-item" />
-        </a>
-        <a className="link-dark" href="https://www.patreon.com/2bytesgoat">
-          <i aria-hidden="true" className="patreon big icon navbar-item"></i>
-        </a>
-      </div>
+  <div className="navbar">
+    <div className="d-flex align-items-center">
+      <a href="/">
+        <img src={logo} alt="logo-home" className="logo" />
+      </a>
+      <a
+        href="https://2bytesgoat.blogspot.com/"
+        target="_blank"
+        rel="noreferrer"
+        className="navbar-item"
+      >
+        Blog
+      </a>
+      <a className="navbar-item" href="/about">
+        About
+      </a>
     </div>
-    <div className="row">
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="d-flex justify-content-center col-xs-18 col-sm-12">
-          <ul className="navbar-nav">
-            <li className="nav-item active px-4">
-              <NavLink className="nav-link navbar-item" exact="true" to="/">
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item px-4">
-                <a className="nav-link navbar-item" target="_blank" href="https://2bytesgoat.blogspot.com/">
-                    Blog
-                </a>
-            </li>
-            <li className="nav-item px-4">
-              <NavLink
-                className="nav-link navbar-item"
-                exact="true"
-                to="/projects"
-              >
-                Demos
-              </NavLink>
-            </li>
-            <li className="nav-item px-4">
-              <NavLink
-                className="nav-link navbar-item"
-                exact="true"
-                to="/about"
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item px-4">
-              <NavLink
-                className="nav-link navbar-item"
-                exact="true"
-                to="/contact"
-              >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div className="d-flex align-items-center">
+      <a
+        className="link-dark navbar-item"
+        href="https://github.com/2BytesGoat"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i aria-hidden="true" className="github big icon" />
+      </a>
+      <a
+        className="link-dark navbar-item"
+        href="https://www.youtube.com/channel/UCIXzN1AIJlp847fiQWO3gWQ"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i aria-hidden="true" className="youtube big icon" />
+      </a>
+      <a
+        className="link-dark navbar-item"
+        href="https://twitter.com/2bytesgoat"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i aria-hidden="true" className="twitter big icon" />
+      </a>
+      <a
+        className="link-dark"
+        href="https://www.patreon.com/2bytesgoat"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="pink-btn">Feed the goat</button>
+      </a>
     </div>
   </div>
 );

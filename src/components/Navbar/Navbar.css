@@ -1,3 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media only screen and (max-device-width: 1076px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
 .navbar-item {
-    color: white !important
+  color: white !important;
+  margin-left: 15px;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.pink-btn {
+  color: #fff;
+  background-color: #b45bcf;
+  border-radius: 0.4rem;
+  border-color: #b45bcf;
+  font-weight: bold;
+  height: 40px;
+  width: 140px;
+  margin-left: 20px;
 }
